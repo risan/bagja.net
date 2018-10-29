@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.defaultLang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {%- seo -%}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ 'css/post.css' | absolute_url }}">
+    {%- feed_meta -%}
+</head>
+<body>
+    {% include header.html %}
+    {% include navbar.html %}
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

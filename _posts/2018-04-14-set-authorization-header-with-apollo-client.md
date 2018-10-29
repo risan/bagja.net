@@ -1,7 +1,7 @@
 ---
 title: Set Authorization Header with Apollo Client
 date: 2018-04-14 13:00:00
-tags: graphql
+tags: [javascript, graphql]
 excerpt: Learn how to use the apollo-link module to set an authorization header when using the Apollo Client.
 image_thumb: img/apollo-logo-thumb.png
 image:

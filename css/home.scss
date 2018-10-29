@@ -2,23 +2,19 @@
 ---
 @import "base";
 
-.post-list {
-  margin-top: 1.5rem;
-}
-
 .post-list li {
   display: flex;
   justify-content: space-between;
   margin-bottom: .5rem;
   padding-bottom: .5rem;
 
-  @media (max-width: 500px) {
+  @include mobile {
     display: block;
   }
 }
 
 .post-list li:not(:last-child) {
-  border-bottom: 1px solid #f5f6ca;
+  border-bottom: 1px solid mix($body-background-color, black, 96%);
 }
 
 .post-list-link {
@@ -30,7 +26,7 @@
   flex: 0 0 auto;
   margin-left: 1rem;
 
-  @media (max-width: 500px) {
+  @include mobile {
     font-size: .85rem;
     margin-left: 0;
   }

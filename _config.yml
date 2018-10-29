@@ -1,32 +1,65 @@
+# Site settings
 title: Risan Bagja's Blog
 description: >-
   Programming journal of Risan Bagja Pradana. A passionate coder who writes
   codes for fun. Seriously.
-lang: en
 
+# Theme settings
+defaultLang: en
+header_title: Risan Bagja
+header_description: Journal of a passionate coder
+date_format: "%d %B %Y"
+
+# Url settings
 url: "http//bagja.net"
 baseurl: /blog
 permalink: /:title:output_ext
 
-header_title: Risan Bagja
-header_description: Journal of a passionate coder
+# jekyll-seo-tag plugin settings
+lang: en_US
+author: Risan Bagja Pradana # Also used by jekyll-feed
+twitter:
+  username: risanbagja
+  card: summary_large_image
+logo: img/risan-square.jpg
+social:
+  name: Risan Bagja Pradana
+  links:
+    - https://twitter.com/risanbagja
+    - https://github.com/risan
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
 
 # Build settings
-markdown: kramdown
+safe: true
+strict_front_matter: true
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: true
+sass:
+  style: compressed
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
+      image: # Used by seo-tag plugin
+        path: img/default-og.jpg
+        width: 1200
+        height: 800
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

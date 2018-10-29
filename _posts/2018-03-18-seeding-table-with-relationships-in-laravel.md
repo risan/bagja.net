@@ -1,7 +1,7 @@
 ---
 title: Seeding Table with Relationships in Laravel
 date: 2018-03-18 17:01:00
-tags: php
+tags: [php, laravel]
 excerpt: Learn how to define relationships on Eloquent model and use Laravel's model factory to seed the database.
 image_thumb: img/seeding-table-with-relationships-in-laravel/featured-thumb.jpg
 image:
@@ -12,14 +12,10 @@ image:
 This is my answer to someone's question on [StackOverflow](https://stackoverflow.com/questions/49219245/laravel-5-6-how-to-seed-tables-with-relationships-to-other-tables/49219836#answer-49219836). How can we seed table with relationships in Laravel? Let's learn how to define relationships on the Eloquent model and use Laravel's model factory to seed the database.
 
 ## Table of Contents
-- [Model and Table Structure](#model-and-table-structure)
-  - [Customer Model](#customer-model)
-  - [Customer Address Model](#customer-address-model)
-  - [Customer Purchase Model](#customer-purchase-model)
-- [Defining Relationships](#defining-relationships)
-  - [Defining Inverse Relationships](#defining-inverse-relationships)
-- [The Model Factory](#the-model-factory)
-- [Database Seeding with Model Factory](#database-seeding-with-model-factory)
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## Model and Table Structure
 

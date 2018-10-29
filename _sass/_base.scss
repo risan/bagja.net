@@ -36,21 +36,27 @@ a {
   }
 }
 
+pre,
+code {
+  font-family: $font-code;
+}
+
 // Layout.
 .container {
   width: 100%;
   max-width: $container-max-width;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   margin: auto;
 }
 
 // Header.
 .header {
-  padding: 1.5rem 0 .75rem 0;
+  padding: 1.5rem 0 1rem 0;
 }
 
 .header-title {
-  font-size: 1.75rem;
+  color: $body-color;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -64,14 +70,15 @@ a {
   display: flex;
 
   li:not(:last-child) {
-    margin-right: .75rem;
+    margin-right: .5rem;
   }
 
   a {
+    font-size: .9rem;
     display: block;
     padding: .25rem .75rem;
     border: 1px solid $link-color;
-    border-radius: 3px;
+    border-radius: $border-radius;
 
     &:hover {
       border-color: $link-hover-color;
@@ -82,5 +89,5 @@ a {
 // Footer
 .footer {
   margin-top: auto;
-  padding: 4rem 0 5rem 0;
+  padding: 3rem 0 4rem 0;
 }

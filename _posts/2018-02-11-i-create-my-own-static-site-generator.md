@@ -1,7 +1,7 @@
 ---
 title: I Create My Own Static Site Generator
 date: 2018-02-11 17:06:00
-tags: thoughts
+tags: [javascript, node]
 excerpt: Instead of writing a blog post more often, I decided to redesign my four months old blog, ditched Jekyll and built a custom static site generator.
 image_thumb: img/i-create-my-own-static-site-generator/featured-thumb.jpg
 image:
@@ -21,12 +21,11 @@ I'm easily seduced by the dark side. It's my bad habit. Rather than putting more
 
 You can check the code and the content of this website on my [Github repository](https://github.com/risan/website). It still needs some works to do: add some tests and extracting the generators to its own NPM module.
 
-- [The Tech Stacks](#the-tech-stacks)
-- [Multiple Webpack Configurations](#multiple-webpack-configurations)
-- [Using chokidar as a Watcher](#using-chokidar-as-a-watcher)
-- [Combining ESLint and Prettier](#combining-eslint-and-prettier)
-- [Built-in promisify Function in Node.js](#built-in-promisify-function-in-nodejs)
-- [Immediately Activate The Service Workers](#immediately-activate-the-service-workers)
+## Table of Contents
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## The Tech Stacks
 

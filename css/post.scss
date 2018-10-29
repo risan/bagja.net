@@ -58,9 +58,10 @@
   }
 
   blockquote {
-    background-color: #efe9b4;
-    border-left: 10px solid #e1dca0;
+    background-color: $blockquote-background-color;
+    border-left: 7px solid mix($blockquote-background-color, #000, 90%);
     padding: 1rem;
+    border-radius: $border-radius;
   }
 
   ol, ul {
@@ -78,7 +79,11 @@
     }
 
     ul {
-      list-style-type: square;
+      list-style-type: circle;
+
+      ul {
+        list-style-type: square;
+      }
     }
   }
 
@@ -86,30 +91,35 @@
     list-style-type: disc;
   }
 
+  // Code
   p, li, a {
     > code {
-      font-size: .95rem;
+      font-size: .9rem;
       padding: 1px 4px;
-      background: #f2f3cd;
-      border-radius: 3px;
+      background: mix($body-background-color, black, 96%);
+      border-radius: $border-radius;
       word-break: break-all;
     }
   }
 
   blockquote {
     code {
-      background: #ddd8a0;
+      background: mix($blockquote-background-color, black, 95%);
     }
   }
 
   pre {
     font-size: .85rem;
-    line-height: 1.25;
+    line-height: 1.5;
     padding: 1rem;
     overflow-x: auto;
     white-space: pre;
     word-wrap: normal;
     margin-bottom: 1rem;
-    border-radius: 3px;
+    border-radius: $border-radius;
+
+    @include mobile {
+      font-size: .75rem;
+    }
   }
 }

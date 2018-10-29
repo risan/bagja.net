@@ -1,7 +1,7 @@
 ---
 title: Building My First iOS Game
 date: 2018-10-10 00:10:00
-tags: swift
+tags: [swiftm ios]
 excerpt: Things I learned from building my very first iOS game using the latest Swift version 4.2.
 image_thumb: img/building-my-first-ios-game/featured-thumb.jpg
 image:
@@ -17,34 +17,13 @@ You can check out the complete project on my Github repository: [risan/bullseye-
 
 ![Bull's Eye game in action](https://media.giphy.com/media/8TzojHt7pxqv8GhXnW/giphy.gif)
 
-## Things I Learned
-
 Here are a few things that I learned and gathered so far about Swift programming language. Note that I use the latest Swift 4.2 version.
 
-* [Variables, Constants, and Data Types](#variables-constants-and-data-types)
-    * [Basic Data Types](#basic-data-types)
-    * [Working with Integer](#working-with-integer)
-    * [Working with Decimal](#working-with-decimal)
-    * [Declaring a Variable](#declaring-a-variable)
-    * [Declaring a Constant](#declaring-a-constant)
-    * [Type Inference](#type-inference)
-    * [String Extrapolation](#string-extrapolation)
-* [Functions](#functions)
-    * [Function with Parameter](#function-with-parameter)
-    * [Omitting Argument Label in a Function](#omitting-argument-label-in-a-function)
-    * [Renaming the Function Parameter](#renaming-the-function-parameter)
-    * [Function with Return Value](#function-with-return-value)
-* [Optional](#optional)
-    * [Optional Binding](#optional-binding)
-    * [Class Initializer](#class-initializer)
-* [Class](#class)
-    * [Class Initializer](#class-initializer)
-* [Other Discoveries](#other-discoveries)
-    * [Force Unwrapping](#force-unwrapping)
-    * [Class Inheritance](#class-inheritance)
-    * [Known Type Parameter](#known-type-parameter)
-    * [Using a Closure](#using-a-closure)
-    * [Displaying Local HTML File on a WebView](#displaying-local-html-file-on-a-webview)
+## Table of Contents
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ### Variables, Constants, and Data Types
 
@@ -71,7 +50,7 @@ Swift also provides several other data types for handling an integer number:
 
 Unless you know about what you're doing, always use the `Int` data type when dealing with an integer number.
 
-#### Working with Decimal
+##### Working with Decimal
 
 There are also several other data types for handling a decimal number:
 
@@ -496,19 +475,19 @@ I must say, so far I enjoy creating an iOS application using Swift. Swift syntax
 
 This little quest of mine, leading me to find more tutorials about building iOS development with Swift. So far I've done another 4 tutorials:
 
-##### [1. Auto layout practice](https://github.com/risan/autolayout-ios)
+[1. Auto layout practice](https://github.com/risan/autolayout-ios)
 
 ![Auto Layout Practice](img/building-my-first-ios-game/auto-layout.jpg)
 
-##### [2. Stack Views practice](https://github.com/risan/stack-views-ios)
+[2. Stack Views practice](https://github.com/risan/stack-views-ios)
 
 ![Stack Views Practice](img/building-my-first-ios-game/stack-views.jpg)
 
-##### [3. Creating a paginated sliding cards](https://github.com/risan/sliding-cards-ios)
+[3. Creating a paginated sliding cards](https://github.com/risan/sliding-cards-ios)
 
 ![Sliding Cards in Action](https://media.giphy.com/media/EQBBtahcZ36yS4ATKz/giphy.gif)
 
-##### [4. A War Card Game](https://github.com/risan/war-card-game-ios)
+[4. A War Card Game](https://github.com/risan/war-card-game-ios)
 
 ![War Card Game in Action](https://media.giphy.com/media/3oqoBNGeV4PEbCcQcP/giphy.gif)
 

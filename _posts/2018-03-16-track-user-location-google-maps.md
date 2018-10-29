@@ -1,7 +1,7 @@
 ---
 title: Track User's Location and Display it on Google Maps
 date: 2018-03-16 17:57:00
-tags: javascript
+tags: [javascript, google-maps]
 excerpt: We'll learn on how to track user's location using the Geolocation API and display it on Google Maps.
 image_thumb: img/track-user-location-google-maps/featured-thumb.jpg
 image:
@@ -14,22 +14,12 @@ This is actually my answer to someone's question on [PHP Indonesia](https://www.
 Before getting started, we're going to need an [API Key](https://developers.google.com/maps/documentation/javascript/get-api-key) to use the Google Maps JavaScript API. As a safety measure, don't forget to set the HTTP referrers on your API key to your own domains.
 
 ## Table of Contents
-- [Displaying Google Map on your Page](#displaying-google-map-on-your-page)
-  - [Our HTML Structure](#our-html-structure)
-  - [Add Some Styles](#add-some-styles)
-  - [Initialize The Map](#initialize-the-map)
-- [Adding Marker to Your Map](#adding-marker-to-your-map)
-- [Get User's Location](#get-users-location)
-  - [Using the getCurrentPosition Method](#using-the-getcurrentposition-Method)
-  - [Simulating User's Location on Chrome](#simulating-users-location-on-chrome)
-  - [Handling Errors](#handling-errors)
-  - [Display User's Location on Google Maps](#display-users-location-on-google-maps)
-  - [Let's Refactor our Code](#lets-refactor-our-code)
-- [Track User's Location with watchPosition](#track-users-location-with-watchposition)
-  - [The PositionOptions](#the-positionoptions)
-  - [The Final Touch](#the-final-touch)
+{:.no_toc}
 
-## Displaying Google Map on your Page
+* TOC
+{:toc}
+
+## Displaying Google Map on Your Page
 
 First, let's start with a simple example: display a map on our HTML page using Google Maps Javascript API.
 

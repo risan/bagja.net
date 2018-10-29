@@ -1,7 +1,7 @@
 ---
 title: Python Notes from Intro to Machine Learning
 date: 2018-04-14 10:00:00
-tags: python
+tags: [python, machine-learning]
 excerpt: Notes and code snippets of Python that I've been collecting so far throughout the "Intro to Machine Learning" course.
 image_thumb: img/python-logo-thumb.png
 image:
@@ -18,47 +18,10 @@ That's why I decided to read all of the provided Python modules and implement it
 So here are some notes and snippets of Python that I've been collecting so far (I'm not even halfway through the course 😝). Also, note that the codes here are still using Python version 2.7.
 
 ## Table of Contents
+{:.no_toc}
 
-* [Modules Classes and Functions](#modules-classes-and-functions)
-    * [Main Entry File](#main-entry-file)
-    * [Import Python Module Dynamically](#import-python-module-dynamically)
-    * [Multiple Returns in Python](#multiple-returns-in-python)
-    * [Importing Modules Outside of the Directory](#importing-modules-outside-of-the-directory)
-* [Output](#output)
-    * [Print The Emojis](#print-the-emojis)
-    * [Pretty Print](#pretty-print)
-* [Working with Pathname](#working-with-pathname)
-    * [Get Filename From URL](#get-filename-from-url)
-    * [Check if File Exists](#check-if-file-exists)
-    * [Create a Directory if It Does Not Exists](#create-a-directory-if-it-does-not-exists)
-* [Working with Files](#working-with-files)
-    * [Downloading a File](#downloading-a-file)
-    * [Extracting Tar File](#extracting-tar-file)
-* [Working with List](#working-with-list)
-    * [Generate a List of Random Numbers](#generate-a-list-of-random-numbers)
-    * [Pair Values from Two Lists](#pair-values-from-two-lists)
-    * [Splitting a List](#splitting-a-list)
-    * [Filtering a List In One Line](#filtering-a-list-in-one-line)
-    * [Sorting a List in Ascending Order](#sorting-a-list-in-ascending-order)
-    * [Using Filter Function with a List](#using-filter-function-with-a-list)
-    * [Using Reduce with a List of Dictionary](#using-reduce-with-a-list-of-dictionary)
-* [Working with Dictionary](#working-with-dictionary)
-    * [Loop Through Dictionary](#loop-through-dictionary)
-    * [Calculate Total of Particular Dictionary Key](#calculate-total-of-particular-dictionary-key)
-* [Working with Numpy](#working-with-numpy)
-    * [Numpy Create Range of Values with The Given Interval](#numpy-create-range-of-values-with-the-given-interval)
-    * [Numpy Create Coordinate Matrices from Coordinate Vectors](#numpy-create-coordinate-matrices-from-coordinate-vectors)
-    * [Flatten Numpy Array](#flatten-numpy-array)
-    * [Pairing Array Values with Second Axis](#pairing-array-values-with-second-axis)
-    * [Generate Coordinates Across The Grid](#generate-coordinates-across-the-grid)
-* [Plotting the Data](#plotting-the-data)
-    * [Plot The Surface Decision](#plot-the-surface-decision)
-    * [Scatter Plot](#scatter-plot)
-* [Dealing with Data](#dealing-with-data)
-    * [Deserializing Python Object](#deserializing-python-object)
-    * [Split Data for Training and Testing](#split-data-for-training-and-testing)
-    * [Vectorized the Strings](#vectorized-the-strings)
-    * [Feature Selection](#feature-selection)
+* TOC
+{:toc}
 
 ## Modules Classes and Functions
 

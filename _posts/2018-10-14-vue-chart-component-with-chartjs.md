@@ -1,7 +1,7 @@
 ---
 title: Vue Chart Component with Chart.js
 date: 2018-10-14 18:38:00
-tags: vue
+tags: [javascript, vue]
 excerpt: Let's build a reusable and beautiful chart component for Vue.js using the Chart.js library.
 image_thumb: img/vue-chart-component-with-chartjs/featured-thumb.png
 image:
@@ -16,19 +16,10 @@ Last night I did some tinkering to integrate Chart.js within the existing Vue co
 You can check out the final working source code on [Github](https://github.com/risan/vue-chart-example). You can also visit the demo here: [risan.io/vue-chart-example](https://risan.io/vue-chart-example/).
 
 ## Table of Contents
+{:.no_toc}
 
-* [Creating New Project](#creating-new-project)
-* [Getting Started with Chart.js](#getting-started-with-chartjs)
-  * [Plot a Line Chart](#plot-a-line-chart)
-  * [Configuring Our Line Chart](#configuring-our-line-chart)
-  * [Making it Prettier](#making-it-prettier)
-* [Integrating Chart.js into Vue](#integrating-chartjs-into-vue)
-  * [Setting Up the Vue Application](#setting-up-the-vue-application)
-  * [The Monthly Sales Chart Component](#the-monthly-sales-chart-component)
-  * [The Line Chart Component](#the-line-chart-component)
-  * [Put Back Chart Datasets and Options](#put-back-chart-datasets-and-options)
-* [Reactive Chart](#reactive-chart)
-* [Closing Thought](#closing-thought)
+* TOC
+{:toc}
 
 ## Creating New Project
 

@@ -1,0 +1,47 @@
+---
+layout: default
+title: Page Not Found
+---
+<style>
+    .not-found {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #f2f2d0;
+        border-radius: 3px;
+    }
+
+    @media (max-width: 500px) {
+        .not-found {
+            flex-direction: column;
+        }
+    }
+
+    .not-found-image-container {
+        flex: 0 1 150px;
+    }
+
+    .not-found-image-container img {
+        display: block;
+    }
+
+    .not-found-text-container {
+        padding-left: 1rem;
+    }
+
+    .not-found h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 0;
+    }
+</style>
+
+<div class="not-found">
+    <div class="not-found-image-container">
+        <img src="https://media.giphy.com/media/VwoJkTfZAUBSU/200w_d.gif" alt="">
+    </div>
+    <article class="not-found-text-container">
+        <h1>404</h1>
+        <p>Page Not Found :(</p>
+    </article>
+</div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ site.defaultLang | default: 'en' }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,6 +7,7 @@
     {%- seo title=false -%}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ 'css/home.css' | absolute_url }}">
+    {%- feed_meta -%}
 </head>
 <body>
     {% include header.html %}
