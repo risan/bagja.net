@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ site.title }} - {{ site.header_description }}</title>
+    {%- seo title=false -%}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ 'css/home.css' | absolute_url }}">
+</head>
+<body>
+    {% include header.html %}
+    {% include navbar.html %}
+    <main>
+        <div class="container">
+            <ul class="post-list">
+                {% for post in site.posts %}
+                    <li>
+                        <a class="post-list-link" href="{{ post.url | absolute_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                        <span class="post-list-date">
+                            {{ post.date | date: "%d %b %Y" }}
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

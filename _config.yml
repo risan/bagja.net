@@ -1,0 +1,32 @@
+title: Risan Bagja's Blog
+description: >-
+  Programming journal of Risan Bagja Pradana. A passionate coder who writes
+  codes for fun. Seriously.
+lang: en
+
+url: "http//bagja.net"
+baseurl: /blog
+permalink: /:title:output_ext
+
+header_title: Risan Bagja
+header_description: Journal of a passionate coder
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

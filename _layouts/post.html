@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {%- seo -%}
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ 'css/post.css' | absolute_url }}">
+</head>
+<body>
+    {% include header.html %}
+    {% include navbar.html %}
+    <main>
+        <div class="container">
+            <article class="post">
+                <h1>{{ page.title | escape }}</h1>
+                <p>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">
+                        {%- assign date_format = site.date_format | default: "%d %B %Y" -%}
+                        {{ page.date | date: date_format }}
+                    </time>
+                </p>
+                {{ content }}
+            </article>
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>
