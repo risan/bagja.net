@@ -68,6 +68,11 @@ code {
 
 .navbar-menu {
   display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-bottom: .5rem;
+  }
 
   li:not(:last-child) {
     margin-right: .5rem;
