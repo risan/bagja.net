@@ -11,7 +11,7 @@ header_description: Journal of a passionate coder
 date_format: "%d %B %Y"
 
 # Url settings
-url: "http//risan.github.io"
+url: "https//risan.github.io"
 baseurl: ""
 permalink: /posts/:title:output_ext
 
