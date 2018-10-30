@@ -1,0 +1,40 @@
+---
+layout: default
+title: Risan Bagja's Blog - Journal of a Passionate Coder
+custom_title: true
+---
+<section class="home-section">
+    <article class="home-about">
+        <h1>Welcome to My Blog!</h1>
+        <p>
+            My name is Risan Bagja. I code for fun, seriously.
+            I enjoy spending time writing clean and maintainable code.
+            This blog serves as a journal to document things I learn as an avid
+            programmer. Here you'll find articles, tutorials, and some quick
+            tips about programming.
+        </p>
+    </article>
+</section>
+
+<section class="home-section">
+    <article class="post-list">
+        <h2 class="home-section-title">Latest Blog Posts</h2>
+        <ul>
+            {%- assign sorted_posts = site.blog | sort: "date" | reverse -%}
+            {%- for post in sorted_posts limit:6 -%}
+                {%- if post.id == "/blog/index" -%}
+                    {%- continue -%}
+                {%- else -%}
+                    <li class="post-list-item">
+                        <a class="post-list-link" href="{{ post.url | absolute_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                        <span class="post-list-date">
+                            {{ post.date | date: "%d %b %Y" }}
+                        </span>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    </article>
+</section>

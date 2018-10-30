@@ -3,9 +3,9 @@ title: Building My First iOS Game
 date: 2018-10-10 00:10:00
 tags: [swiftm ios]
 excerpt: Things I learned from building my very first iOS game using the latest Swift version 4.2.
-image_thumb: img/building-my-first-ios-game/featured-thumb.jpg
+image_thumb: ../img/blog/building-my-first-ios-game/featured-thumb.jpg
 image:
-  path: img/building-my-first-ios-game/og.jpg
+  path: ../img/blog/building-my-first-ios-game/og.jpg
   width: 1200
   height: 715
 ---
@@ -477,11 +477,11 @@ This little quest of mine, leading me to find more tutorials about building iOS 
 
 [1. Auto layout practice](https://github.com/risan/autolayout-ios)
 
-![Auto Layout Practice](img/building-my-first-ios-game/auto-layout.jpg)
+![Auto Layout Practice](../img/blog/building-my-first-ios-game/auto-layout.jpg)
 
 [2. Stack Views practice](https://github.com/risan/stack-views-ios)
 
-![Stack Views Practice](img/building-my-first-ios-game/stack-views.jpg)
+![Stack Views Practice](../img/blog/building-my-first-ios-game/stack-views.jpg)
 
 [3. Creating a paginated sliding cards](https://github.com/risan/sliding-cards-ios)
 

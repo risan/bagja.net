@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="post-list">
+    <h1 class="post-list-title">{{ page.title }}</h1>
+    <ul>
+        {%- assign sorted_posts = site[page.collection] | sort: "date" | reverse -%}
+        {%- for post in sorted_posts -%}
+            {%- assign indexId = "/" | append: page.collection | append: "/index" -%}
+            {%- if post.id == indexId -%}
+                {%- continue -%}
+            {%- else -%}
+                <li class="post-list-item">
+                    <a class="post-list-link" href="{{ post.url | absolute_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                    <span class="post-list-date">
+                        {{ post.date | date: "%d %b %Y" }}
+                    </span>
+                </li>
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
+</article>

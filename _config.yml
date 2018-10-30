@@ -11,9 +11,15 @@ header_description: Journal of a passionate coder
 date_format: "%d %B %Y"
 
 # Url settings
-url: "http//bagja.net"
-baseurl: /blog
-permalink: /:title:output_ext
+url: "http//risan.github.io"
+baseurl: ""
+permalink: /posts/:title:output_ext
+
+collections:
+  blog:
+    output: true
+  id:
+    output: true
 
 # jekyll-seo-tag plugin settings
 lang: en_US
@@ -53,11 +59,19 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "post"
+      layout: post
       image: # Used by seo-tag plugin
         path: img/default-og.jpg
         width: 1200
         height: 800
+  -
+    scope:
+      path: ""
+      type: "id"
+    values:
+      lang: "id"
+      description: >-
+        Tutorial, artikel, serta tips pemrograman berbahasa Indonesia.
 
 # Plugins
 plugins:

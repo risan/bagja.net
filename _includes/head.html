@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+{%- if page.custom_title -%}
+    {%- if page.custom_title == true -%}
+        <title>{{ page.title }}</title>
+    {%- else -%}
+        <title>{{ page.custom_title }}</title>
+    {%- endif -%}
+    {%- seo title=false -%}
+{%- else -%}
+    {%- seo title -%}
+{%- endif -%}
+<link rel="stylesheet" href="{{ 'css/main.css' | absolute_url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="{{ 'img/darth-maul-48x48.png' | absolute_url }}">
+{%- feed_meta -%}

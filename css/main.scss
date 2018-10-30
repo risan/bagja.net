@@ -3,6 +3,66 @@
 @import "base";
 @import "syntax";
 
+// Home
+.home-section:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.home-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+
+.home-about {
+  padding: 1rem;
+  background: mix($body-background-color, #000, 90%);
+  border-radius: $border-radius;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+// List of posts.
+.post-list-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+
+.post-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+
+  @include mobile {
+    display: block;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid mix($body-background-color, black, 96%);
+  }
+}
+
+.post-list-link {
+  display: block;
+}
+
+.post-list-date {
+  display: block;
+  flex: 0 0 auto;
+  margin-left: 1rem;
+
+  @include mobile {
+    font-size: .85rem;
+    margin-left: 0;
+  }
+}
+
+// Single post.
 .post {
   p,
   ol,
@@ -91,8 +151,28 @@
     list-style-type: disc;
   }
 
+  // Table
+  table {
+    width: 100%;
+    max-width: 100%;
+    font-size: .9rem;
+    background-color: transparent;
+  }
+
+  th,
+  td {
+    padding: .25rem .5rem;
+    vertical-align: top;
+    border-top: 1px solid mix($body-background-color, #000, 90%);
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid mix($body-background-color, #000, 90%);
+  }
+
   // Code
-  p, li, a {
+  p, li, a, td {
     > code {
       font-size: .9rem;
       padding: 1px 4px;

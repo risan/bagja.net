@@ -3,9 +3,9 @@ title: Seeding Table with Relationships in Laravel
 date: 2018-03-18 17:01:00
 tags: [php, laravel]
 excerpt: Learn how to define relationships on Eloquent model and use Laravel's model factory to seed the database.
-image_thumb: img/seeding-table-with-relationships-in-laravel/featured-thumb.jpg
+image_thumb: ../img/blog/seeding-table-with-relationships-in-laravel/featured-thumb.jpg
 image:
-  path: img/seeding-table-with-relationships-in-laravel/og.jpg
+  path: ../img/blog/seeding-table-with-relationships-in-laravel/og.jpg
   width: 1200
   height: 800
 ---

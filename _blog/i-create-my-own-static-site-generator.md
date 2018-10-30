@@ -3,9 +3,9 @@ title: I Create My Own Static Site Generator
 date: 2018-02-11 17:06:00
 tags: [javascript, node]
 excerpt: Instead of writing a blog post more often, I decided to redesign my four months old blog, ditched Jekyll and built a custom static site generator.
-image_thumb: img/i-create-my-own-static-site-generator/featured-thumb.jpg
+image_thumb: ../img/blog/i-create-my-own-static-site-generator/featured-thumb.jpg
 image:
-  path: img/i-create-my-own-static-site-generator/og.jpg
+  path: ../img/blog/i-create-my-own-static-site-generator/og.jpg
   width: 1200
   height: 800
 ---
@@ -37,7 +37,7 @@ Luckily Javascript has a vibrant community. With its NPM ecosystem, there are to
 
 Although there's no lego block heavier than a black hole 😛
 
-![Heaviest objects in the universe](img/i-create-my-own-static-site-generator/heaviest-object-in-the-universe.png)
+![Heaviest objects in the universe](../img/blog/i-create-my-own-static-site-generator/heaviest-object-in-the-universe.png)
 
 Here are some packages that I use for building this website generator:
 
@@ -225,7 +225,7 @@ self.addEventListener('activate', event => {
 
 I'm really happy with my current blog setup. The look and feel are still simple. The performance is also better. It easily scored 100 on almost every [Lighthouse](https://developers.google.com/web/tools/lighthouse/) matrix categories.
 
-![It scored 100 on almost every Lighthouse matrix](img/i-create-my-own-static-site-generator/lighthouse-report.png)
+![It scored 100 on almost every Lighthouse matrix](../img/blog/i-create-my-own-static-site-generator/lighthouse-report.png)
 
 Hopefully, I don't easily seduce by the Dark Side again and put my effort on the writing part instead 🤞. There are also two more things that I haven't covered here:
 
