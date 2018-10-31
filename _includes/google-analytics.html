@@ -4,6 +4,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
+        gtag('config', '{{ site.google_analytics }}', {
+          page_title: '{{ page.title | escape }}',
+          page_path: '{{ page.url | replace: "/index.html", "/" }}',
+          page_location: '{{ page.url | replace: "/index.html", "/" | absolute_url }}',
+          anonymizeIp: true
+        });
     </script>
 {% endif %}
