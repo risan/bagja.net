@@ -6800,7 +6800,7 @@ Terakhir, perbanyaklah menulis kode! Karena ini merupakan cara yang paling efekt
 
 Seluruh isi artikel ini dapat diakses secara bebas di [Github](https://github.com/risan/koding). Silakan buka [*issue* di Github](https://github.com/risan/koding/issues/new) atau komentar di bawah jika Anda menemukan kesalahan dalam artikel ini. Bila ada kritik atau saran, jangan ragu tuliskan pada kolom komentar di bawah.
 
-Kunjungi juga blog pribadi saya: [risan.io](https://risan.io/) dan [Medium](https://medium.com/risan)—yang juga membahas topik-topik seputar pemrograman.
+Kunjungi juga blog pribadi saya: [bagja.net](https://bagja.net) dan [Medium](https://medium.com/risan)—yang juga membahas topik-topik seputar pemrograman.
 
 **Credits:**
 - *I'm Ready by Spongebob Squarepants* dari [Giphy](https://giphy.com/gifs/spongebob-season-4-spongebob-squarepants-l1Aswx03WbLDf9kYw).

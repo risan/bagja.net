@@ -13,7 +13,7 @@ Chart.js is an amazing chart library for JavaScript. It's modern and performant;
 
 Last night I did some tinkering to integrate Chart.js within the existing Vue code base. So, how can we do that? If you want, there's actually a wrapper for Chart.js already available for Vue: [vue-chartjs](https://vue-chartjs.org). If you take a look at the `vue-chartjs` [source code](https://github.com/apertureless/vue-chartjs), it's actually pretty simple and straightforward. So let's try to build one ourself!
 
-You can check out the final working source code on [Github](https://github.com/risan/vue-chart-example). You can also visit the demo here: [risan.io/vue-chart-example](https://risan.io/vue-chart-example/).
+You can check out the final working source code on [Github](https://github.com/risan/vue-chart-example). You can also visit the demo here: [bagja.net/vue-chart-example](https://bagja.net/vue-chart-example/).
 
 ## Table of Contents
 {:.no_toc}
@@ -919,7 +919,7 @@ export default {
 
 ## Closing Thought
 
-There you have it! A reusable chart component for Vue! You can check out the complete source code on [Github](https://github.com/risan/vue-chart-example) and play around with the demo here: [risan.io/vue-chart-example](https://risan.io/vue-chart-example).
+There you have it! A reusable chart component for Vue! You can check out the complete source code on [Github](https://github.com/risan/vue-chart-example) and play around with the demo here: [bagja.net/vue-chart-example](https://bagja.net/vue-chart-example).
 
 Note that on our case we only anticipate changes on the `datasets` prop. But of course, you might have a case where the `labels` or even the `options` are possible to change too. In that case, don't forget to watch for changes on those props too. Replace the associated chart's configuration, and call the `update()` method to re-render the chart.
 
