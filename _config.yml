@@ -14,6 +14,7 @@ date_format: "%d %B %Y"
 url: "https://bagja.net"
 baseurl: ""
 permalink: /posts/:title:output_ext
+google_analytics: UA-27136969-14
 
 collections:
   blog:
