@@ -74,6 +74,11 @@ defaults:
       lang: "id"
       description: >-
         Tutorial, artikel, serta tips pemrograman berbahasa Indonesia.
+  -
+    scope:
+      path: "google*.html"
+    values:
+      sitemap: false
 
 # Plugins
 plugins:
