@@ -9,7 +9,7 @@ image:
   width: 1200
   height: 800
 ---
-Similar to Webpack or Browserify, Rollup is a module bundler for JavaScript. It allows us to use the modern ES module system and transform it into another module system: CommonJS, AMD, or the UMD. It can also bundle our module and wrap it inside the IIFE (Immediately-Invoked Function Expression).
+Similar to Webpack or Browserify, [Rollup](https://rollupjs.org) is a module bundler for JavaScript. It allows us to use the modern ES module system and transform it into another module system: CommonJS, AMD, or the UMD. It can also bundle our module and wrap it inside the IIFE (Immediately-Invoked Function Expression).
 
 Though people usually use Rollup to bundle a library. It's possible to bundle an application too.
 
@@ -1473,4 +1473,4 @@ Congratulation 🎉 You've made it until the end! Let's recap what you've learne
 * Many plugins available to extend Rollup capability, we tried several of them: resolving external NPM package, transforming CommonJS module, integration with Babel, and plugin for minifying the bundle.
 * We also learn how to publish our package to NPM registry.
 
-You can always check the source code for this tutorial on my Github repository: [github.com/risan/eat-fruit](https://github.com/risan/eat-fruit).
+You can get the source code for this tutorial on my Github repository: [github.com/risan/eat-fruit](https://github.com/risan/eat-fruit). And don't forget to check out the official [Rollup guide](https://rollupjs.org/guide/en).
