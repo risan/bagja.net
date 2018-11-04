@@ -2,16 +2,34 @@
     <div class="container">
         <ul class="navbar-menu">
             <li>
-                <a href="{{ '/' | absolute_url }}">Home</a>
+                <a href="{{ '/' | absolute_url }}">
+                    <span role="img" aria-label="house with garden">🏡</span>
+                    Home
+                </a>
             </li>
             <li>
-                <a href="{{ '/blog/' | absolute_url }}">Blog</a>
+                <a href="{{ '/blog/' | absolute_url }}">
+                    <span role="img" aria-label="green textbook">📗</span>
+                    Blog
+                </a>
             </li>
             <li>
-                <a href="{{ 'about.html' | absolute_url }}">About</a>
+                <a href="{{ '/tips/' | absolute_url }}">
+                    <span role="img" aria-label="fire">🔥</span>
+                    Tips
+                </a>
             </li>
             <li>
-                <a href="{{ '/id/' | absolute_url }}">🇮🇩 Indonesian</a>
+                <a href="{{ 'about.html' | absolute_url }}">
+                    <span role="img" aria-label="man technologist">👨🏻‍💻</span>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="{{ '/id/' | absolute_url }}">
+                    <span role="img" aria-label="flag of Indonesia">🇮🇩</span>
+                    Indonesian
+                </a>
             </li>
         </ul>
     </div>

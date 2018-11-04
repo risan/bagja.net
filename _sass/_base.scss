@@ -49,6 +49,19 @@ code {
   margin: auto;
 }
 
+// Button.
+.button {
+  font-size: .9rem;
+  display: inline-block;
+  padding: .25rem .5rem;
+  border: 1px solid $link-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    border-color: $link-hover-color;
+  }
+}
+
 // Header.
 .header {
   padding: 1.5rem 0 1rem 0;
@@ -79,9 +92,9 @@ code {
   }
 
   a {
-    font-size: .9rem;
+    font-size: .85rem;
     display: block;
-    padding: .25rem .75rem;
+    padding: .2rem .5rem;
     border: 1px solid $link-color;
     border-radius: $border-radius;
 

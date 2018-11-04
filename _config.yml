@@ -21,6 +21,8 @@ collections:
     output: true
   id:
     output: true
+  tips:
+    output: true
 
 # jekyll-seo-tag plugin settings
 lang: en_US

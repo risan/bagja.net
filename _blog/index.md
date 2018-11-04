@@ -1,6 +1,6 @@
 ---
 layout: collection-home
 title: Blog Posts
-custom_title: Risan Bagja's Blog - Journal of a Passionate Coder
+custom_title: Programming Articles and Tutorials | Risan Bagja's Blog
 sitemap: false
 ---

@@ -18,7 +18,10 @@ custom_title: true
 
 <section class="home-section">
     <article class="post-list">
-        <h2 class="home-section-title">Latest Blog Posts</h2>
+        <h2 class="home-section-title">
+            <span role="img" aria-label="green textbook">📗</span>
+            Latest Blog Posts
+        </h2>
         <ul>
             {%- assign sorted_posts = site.blog | sort: "date" | reverse -%}
             {%- for post in sorted_posts limit:6 -%}
@@ -36,5 +39,41 @@ custom_title: true
                 {%- endif -%}
             {%- endfor -%}
         </ul>
+        <nav class="see-all-container">
+            <a class="button" href="{{ '/blog/' | absolute_url }}">
+                See All Posts &rarr;
+            </a>
+        </nav>
+    </article>
+</section>
+
+<section class="home-section">
+    <article class="post-list">
+        <h2 class="home-section-title">
+            <span role="img" aria-label="fire">🔥</span>
+            Latest Programming Tips
+        </h2>
+        <ul>
+            {%- assign sorted_posts = site.tips | sort: "date" | reverse -%}
+            {%- for post in sorted_posts limit:6 -%}
+                {%- if post.id == "/tips/index" -%}
+                    {%- continue -%}
+                {%- else -%}
+                    <li class="post-list-item">
+                        <a class="post-list-link" href="{{ post.url | absolute_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                        <span class="post-list-date">
+                            {{ post.date | date: "%d %b %Y" }}
+                        </span>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
+        <nav class="see-all-container">
+            <a class="button" href="{{ '/tips/' | absolute_url }}">
+                See All Tips &rarr;
+            </a>
+        </nav>
     </article>
 </section>
