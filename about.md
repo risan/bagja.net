@@ -22,7 +22,7 @@ I've tried various programming languages. From Swift, Python, Ruby, Java, Haskel
 
 I have extensive experience with PHP and JavaScript. For the backend framework, I often choose Laravel for PHP and Express for Node. As for the client side, I'm a huge fan of Vue and React. I'm also comfortable working with the Linux server too. However, I'm not really good at design. Luckily we now have beautiful CSS frameworks like Bootstrap or Bulma.
 
-This blog serves as a journal to document things I learn as an avid programmer. It's powered by [Jekyll](https://jekyllrb.com) and it's hosted for free on Github Pages. You can check out the entire [source code on Github](https://github.com/risan/blog).
+This blog serves as a journal to document things I learn as an avid programmer. It's powered by [Jekyll](https://jekyllrb.com) and it's hosted for free on [Netlify](https://www.netlify.com/). You can check out the entire [source code on Github](https://github.com/risan/blog).
 
 Thank you for passing by! Check out my profiles on other websites too:
 

@@ -1,6 +1,6 @@
 # Risan's Programming Blog
 
-Risan's programming blog powered by [Jekyll](https://jekyllrb.com/) and [Github Pages](https://pages.github.com/).
+Risan's programming blog powered by [Jekyll](https://jekyllrb.com/) and [Netlify](https://www.netlify.com/).
 
 ## Requirements
 
