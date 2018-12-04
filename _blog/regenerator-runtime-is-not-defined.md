@@ -1,5 +1,5 @@
 ---
-title: regeneratorRuntime is not defined
+title: Regenerator Runtime is not defined
 date: 2018-11-11 11:05:00
 tags: [javascript]
 excerpt: regeneratorRuntime is not defined. Configuring Rollup and Babel to transform Async function into a backward compatible ES5 code.
@@ -105,16 +105,17 @@ As you can see the `async giphyRandom` function is transformed. And the error is
 
 The first approach is just too much of a hassle for the user. So let's include this `regeneratorRuntime` module in our bundle. (Or you can just drop the support for older browsers 😉)
 
-There are also two ways of including this `regeneratorRuntime` module in your bundle:
+There are also three ways of including this `regeneratorRuntime` module in your bundle:
 
 1. Import the module explicitly: [`regenerator-runtime`](https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime).
 2. Use the Babel plugin: [`@babel/plugin-transform-runtime`](https://babeljs.io/docs/en/babel-plugin-transform-runtime).
+3. Or if you use [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env#usebuiltins), you can simply set the `useBuiltIns` option to `usage`.
 
 The first solution is not scalable. Imagine that in the future all the browsers in our `.browserslistrc` file finally support this `async` function. But because we explicitly import the `regenerator-runtime`, this module will always be included in our final bundle.
 
-With the second approach, the `regeneratorRuntime` module will only be injected if the targetted environment does not support a `generator` or `async` function.
+With the second and the third approach, the `regeneratorRuntime` module will only be injected if the targetted environment does not support a `generator` or `async` function.
 
-To execute this solution, first install the plugin:
+To execute the second solution, first install the plugin:
 
 ```bash
 $ npm install @babel/plugin-transform-runtime -D
@@ -169,5 +170,21 @@ export default [
   }
 ];
 ```
+
+The third solution is a lot more simpler. All we have to do is set the `useBuiltIns` option to `usage` on our `.babelrc` file:
+
+```json
+```json
+{
+  "presets": [
+    ["@babel/env", {
+      "modules": false,
+      "useBuiltIns": "usage"
+    }]
+  ]
+}
+```
+
+Babel will automatically import the polyfills for the features that we only use. The polyfill itself is provided by the [core-js](https://github.com/zloirock/core-js).
 
 Now everything should be working fine 👌🏻

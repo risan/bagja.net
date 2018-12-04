@@ -845,6 +845,7 @@ Next, let's create a `.babelrc` config file. Store it within the `src` directory
       "@babel/env",
       {
         "modules": false,
+        "useBuiltIns": "usage",
         "targets": {
           "node": "4"
         }
@@ -854,7 +855,7 @@ Next, let's create a `.babelrc` config file. Store it within the `src` directory
 }
 ```
 
-We set the `modules` to `false` to prevent Babel from transforming any ES modules. Rollup already handles this for us.
+We set the `modules` to `false` to prevent Babel from transforming any ES modules. Rollup already handles this for us. We also set the `useBuiltIns` to `usage` to import polyfills for the features that we only use.
 
 We also set the minimum Node version to `4`. If we don't set the `targets` option, it will work exactly the same as using `@babel/preset-es2015`, `@babel/preset-es2016`, and `@babel/preset-es2017` together.
 
@@ -1061,6 +1062,7 @@ export default [
             '@babel/env',
             {
               modules: false,
+              useBuiltIns: "usage",
               targets: 'maintained node versions'
             }
           ]
@@ -1097,6 +1099,7 @@ babel({
       '@babel/env',
       {
         modules: false,
+        useBuiltIns: "usage",
         targets: 'maintained node versions'
       }
     ]
@@ -1158,6 +1161,7 @@ export default [
             '@babel/env',
             {
               modules: false,
+              useBuiltIns: "usage",
               targets: 'maintained node versions'
             }
           ]
@@ -1326,6 +1330,7 @@ export default [
             '@babel/env',
             {
               modules: false,
+              useBuiltIns: "usage",
               targets: 'maintained node versions'
             }
           ]
