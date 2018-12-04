@@ -2,9 +2,9 @@
 title: Express Responds with Base64 Encoded Image
 date: 2018-12-04 10:16:00
 tags: [javascript, express]
-excerpt:
+excerpt: Using Express to send response with base64 encoded image.
 image_thumb: ../img/express-logo-thumb.png
-image: Using Express to send response with base64 encoded image.
+image:
   path: ../img/express-logo-og.png
   width: 1200
   height: 800
