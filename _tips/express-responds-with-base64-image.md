@@ -9,7 +9,7 @@ image:
   width: 1200
   height: 800
 ---
-I want to create an endpoint that will respond with a 1x1 pixel PNG file. Instead of using the `sendFile` method, I choose to use the base64 encoded representation since the file is size super small. This way I can avoid accessing the file system.
+I want to create an endpoint that will respond with a 1x1 pixel PNG file. Instead of using the [`sendFile`](https://expressjs.com/en/4x/api.html#res.sendFile) method, I choose to use the base64 encoded representation since the file size is super small. This way I can avoid accessing the file system entirely.
 
 Here's the gist:
 
