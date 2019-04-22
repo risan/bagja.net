@@ -6,6 +6,7 @@ image:
   path: ../img/php-logo-og.png
   width: 1200
   height: 800
+canonical: false
 ---
 PHP—akronim rekursif dari *PHP: Hypertext Preprocessor*)—merupakan bahasa pemrograman untuk web yang mulanya dikembangkan oleh Rasmus Lerdorf pada tahun 1994. PHP berjalan di sisi server (peladen) dan umumnya digunakan untuk membuat aplikasi berbasis web yang dinamis.
 
